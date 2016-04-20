@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="rbApp">
+<head>
+    <script type="text/javascript" src="assets/config.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/stylesheet/custom.css">
+    <script src="assets/bootstrap/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/libs/0angular.js"></script>
+    <script type="text/javascript" src="assets/libs/1angular-ui-router.js"></script>
+    <!--<script type="text/javascript" src="app.js"></script>-->
+    <script type="text/javascript" src="app/rbApp.module.js"></script>
+    <script type="text/javascript" src="app/rbApp.route.js"></script>
+    <script type="text/javascript" src="app/component/home/home.ctrl.js"></script>
+    <script type="text/javascript" src="app/component/home/home.factory.js"></script>
+
+    <script type="text/javascript" src="app/component/add/add.ctrl.js"></script>
+    <script type="text/javascript" src="app/component/add/add.factory.js"></script>
+
+
+    <script type="text/javascript" src="app/component/edit/edit.ctrl.js"></script>
+    <script type="text/javascript" src="app/component/edit/edit.factory.js"></script>
+
+    <script type="text/javascript" src="app/component/delete/delete.ctrl.js"></script>
+    <script type="text/javascript" src="app/component/delete/delete.factory.js"></script>
+    <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/sweetalert/dist/sweetalert.css">
+    <title></title>
+</head>
+<body >
+                <div class = "container-fluid">
+                <div class="row" ><h2 style = "margin-left:35%;">AngularJs KIP </h2></div>
+                    <div ui-view style="height:100%;"></div>
+                </div>
+</body>
+
+</html>
