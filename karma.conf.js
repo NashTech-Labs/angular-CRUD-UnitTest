@@ -20,9 +20,13 @@ module.exports = function(config) {
         'node_modules/angular-mocks/angular-mocks.js',
         'app/rbApp.module.js',
         'app/rbApp.route.js',
+        'test/add.test.ctrl.js',
         'app/component/add/add.factory.js',
         'app/component/add/add.ctrl.js',
-        'test/add.test.ctrl.js'
+        'app/component/home/home.ctrl.js',
+        'app/component/delete/delete.ctrl.js',
+        'app/component/edit/edit.ctrl.js'
+
 
     ],
 
@@ -35,15 +39,25 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        //'app/component/add/add.ctrl.js':'coverage',
+        'app/component/add/add.ctrl.js':'coverage',
+        'app/component/delete/delete.ctrl.js':'coverage',
+        'app/component/edit/edit.ctrl.js':'coverage',
+        'app/component/home/home.ctrl.js':'coverage'
+
+
     },
+
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress','coverage'],
 
+      coverageReporter: {
+          type : 'html',
+          dir : 'coverage/'
+      },
 
     // web server port
     port: 9876,

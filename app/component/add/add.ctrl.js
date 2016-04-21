@@ -13,6 +13,7 @@
     $scope.addEmployee = function() {
        // console.log(JSON.stringify(emoloyee));
         addFactory.addFactoryMethod($scope.employee).success(function(resultData, status, config, statusText){
+
             $state.go('home');
         }).error(function(error){
 
